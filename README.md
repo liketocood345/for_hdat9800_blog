@@ -99,6 +99,12 @@ for_hdat9800/
 - 删除 `overview.Rmd`，导航「总览」指向 `index.html`
 - 新增本 `README.md`，集中记录设计与改动
 
+### 2026-06-05 — 首页视觉（简历设计风格）
+
+- 从本地 CV docx **仅提取**配色与几何语言（深蓝侧栏 + 浅蓝底 + 矩形/圆/横条），**未**写入简历正文或联系方式
+- 新增 `theme.css`；`index.Rmd` 增加 `cv-home-deco` 几何装饰区
+- 色板：`#213347` `#2D4B6A` `#334E6C` `#D7E1ED` `#DEEBF6`
+
 ### 待办（可选）
 
 - [ ] Build 后脚本自动生成 `llms.txt`、`robots.txt`、`content/index.json`

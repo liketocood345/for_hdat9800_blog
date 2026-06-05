@@ -6,4 +6,11 @@ site: distill::distill_website
 listing: posts
 ---
 
+<div class="cv-home-deco" aria-hidden="true">
+  <div class="cv-geo-sidebar"></div>
+  <div class="cv-geo-accent cv-geo-accent--circle"></div>
+  <div class="cv-geo-accent cv-geo-accent--bar"></div>
+  <div class="cv-geo-accent cv-geo-accent--rect"></div>
+</div>
+
 所有博客文章如下，最新发布排在最前。
