@@ -64,7 +64,7 @@ for_hdat9800/
 | `media-container media-container--medium` | 640px | 正文内嵌视频 |
 | `media-container media-container--small` | 400px | 缩略剪辑、小图 |
 
-可复制 `_templates/media-container-snippets.Rmd` 中的 `{=html}` 片段。样式在 `theme.css`；裸 `iframe` / `video` 会显示虚线边框提示。
+可复制 `_templates/media-container-snippets.Rmd` 中的 `{=html}` 片段。样式在 `theme.css`（全站通过 `favicon.html` 外链 `/for_hdat9800/theme.css`，避免博文页内联样式过期）；裸 `iframe` / `video` 会显示虚线边框提示。
 
 ### 媒体与 Git LFS（默认不用）
 
