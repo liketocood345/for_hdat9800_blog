@@ -1,0 +1,15 @@
+---
+title: "About this blog"
+description: |
+  HDAT9800 health data science blog
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This site supports **HDAT9800 — Visualisation and Communication of Health Data** (UNSW, Term 2 2026).
+
+It is built with [Distill](https://rstudio.github.io/distill/) for R Markdown and hosted on GitHub Pages.
+
+Posts will cover data visualisation exercises, reproducible analysis, and course reflections.

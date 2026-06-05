@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "HDAT9800 health data science blog",
+      "author": [],
+      "contents": "\r\nThis site supports HDAT9800 — Visualisation and Communication of Health Data (UNSW, Term 2 2026).\r\nIt is built with Distill for R Markdown and hosted on GitHub Pages.\r\nPosts will cover data visualisation exercises, reproducible analysis, and course reflections.\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-06-05T16:30:29+10:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Health Data Science Blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-06-05T16:30:30+10:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
