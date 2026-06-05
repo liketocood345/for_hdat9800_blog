@@ -1,13 +1,13 @@
 name: "for_hdat9800"
-title: "Health Data Science Blog"
+title: "<=test_place_holder=>"
 description: |
-  HDAT9800 health data science blog — visualisation, communication, and reproducible analysis.
+  <=test_place_holder=>
 base_url: https://liketocood345.github.io/for_hdat9800
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - text: "<=test_place_holder=>"
       href: index.html
-    - text: "About"
+    - text: "<=test_place_holder=>"
       href: about.html
 output: distill::distill_article
