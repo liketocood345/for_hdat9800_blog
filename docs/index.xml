@@ -3,7 +3,7 @@
   <channel>
     <title>&lt;=test_place_holder=&gt;</title>
     <link>https://liketocood345.github.io/for_hdat9800</link>
-    <atom:link href="https://liketocood345.github.io/for_hdat9800/overview.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://liketocood345.github.io/for_hdat9800/index.xml" rel="self" type="application/rss+xml"/>
     <description>&lt;=test_place_holder=&gt;
 </description>
     <generator>Distill</generator>

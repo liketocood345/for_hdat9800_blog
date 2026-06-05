@@ -1,10 +1,9 @@
 ---
-title: "<=test_place_holder=>"
+title: "总览"
 description: |
-  <=test_place_holder=>
+  全部博客文章，按发布时间排列。
 site: distill::distill_website
+listing: posts
 ---
 
-<=test_place_holder=>
-
-欢迎访问本博客。[总览](overview.html) 页面可查看全部文章列表。
+所有博客文章如下，最新发布排在最前。

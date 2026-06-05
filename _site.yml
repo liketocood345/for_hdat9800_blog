@@ -6,10 +6,8 @@ base_url: https://liketocood345.github.io/for_hdat9800
 output_dir: "docs"
 navbar:
   right:
-    - text: "<=test_place_holder=>"
-      href: index.html
     - text: "总览"
-      href: overview.html
+      href: index.html
     - text: "<=test_place_holder=>"
       href: about.html
 output: distill::distill_article
