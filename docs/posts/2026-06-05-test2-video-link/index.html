@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-
+  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
+  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
+  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
   body {
@@ -2559,15 +2562,37 @@ d-title h1 {
 <h2 id="test_video_link">test_video_link</h2>
 <p>This post embeds a Bilibili video as an external link test (<code>test_video_link</code>).</p>
 <p>Source: <a href="https://www.bilibili.com/video/BV19W7C64EcK/">EasyVtuberStudio on Bilibili</a></p>
-<div class="video-embed" style="max-width:960px;margin:1.25rem auto;">
+<h3 id="large-embed-960px">Large embed (960px)</h3>
+<div class="video-embed video-embed--large">
   <iframe
-    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0"
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
     scrolling="no"
     frameborder="0"
     allowfullscreen="true"
-    title="EasyVtuberStudio Bilibili video"
-    style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;">
-  </iframe>
+    title="EasyVtuberStudio Bilibili video (large)"
+  ></iframe>
+</div>
+<h3 id="medium-embed-a-640px">Medium embed A (640px)</h3>
+<p>Standard player controls: play / pause, progress bar, and volume. Autoplay off.</p>
+<div class="video-embed video-embed--medium">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    title="EasyVtuberStudio Bilibili video (medium A)"
+  ></iframe>
+</div>
+<h3 id="medium-embed-b-640px">Medium embed B (640px)</h3>
+<p>Second medium embed with the same controls and autoplay off.</p>
+<div class="video-embed video-embed--medium">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    title="EasyVtuberStudio Bilibili video (medium B)"
+  ></iframe>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

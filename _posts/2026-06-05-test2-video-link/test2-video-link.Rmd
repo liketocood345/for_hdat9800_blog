@@ -18,15 +18,48 @@ This post embeds a Bilibili video as an external link test (`test_video_link`).
 
 Source: [EasyVtuberStudio on Bilibili](https://www.bilibili.com/video/BV19W7C64EcK/)
 
+### Large embed (960px)
+
 ```{=html}
-<div class="video-embed" style="max-width:960px;margin:1.25rem auto;">
+<div class="video-embed video-embed--large">
   <iframe
-    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0"
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
     scrolling="no"
     frameborder="0"
     allowfullscreen="true"
-    title="EasyVtuberStudio Bilibili video"
-    style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;">
-  </iframe>
+    title="EasyVtuberStudio Bilibili video (large)"
+  ></iframe>
+</div>
+```
+
+### Medium embed A (640px)
+
+Standard player controls: play / pause, progress bar, and volume. Autoplay off.
+
+```{=html}
+<div class="video-embed video-embed--medium">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    title="EasyVtuberStudio Bilibili video (medium A)"
+  ></iframe>
+</div>
+```
+
+### Medium embed B (640px)
+
+Second medium embed with the same controls and autoplay off.
+
+```{=html}
+<div class="video-embed video-embed--medium">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    title="EasyVtuberStudio Bilibili video (medium B)"
+  ></iframe>
 </div>
 ```

@@ -388,3 +388,24 @@ d-title h1 {
 .about-me-profile {
   margin-top: 0.5rem;
 }
+
+/* Bilibili iframe embeds */
+.video-embed {
+  margin: 1.25rem auto;
+}
+
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+
+.video-embed--large {
+  max-width: 960px;
+}
+
+.video-embed--medium {
+  max-width: 640px;
+}
