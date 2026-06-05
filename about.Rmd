@@ -1,11 +1,27 @@
 ---
-title: "<=test_place_holder=>"
+title: "关于我"
 description: |
-  <=test_place_holder=>
+  GitHub 账号信息；暂不公布更多个人资料。
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<=test_place_holder=>
+<div class="about-me-profile">
+
+<a href="https://github.com/liketocood345" class="about-me-avatar-link">
+  <img src="https://avatars.githubusercontent.com/u/130688934?v=4"
+       alt="GitHub avatar"
+       class="about-me-avatar" />
+</a>
+
+<p class="about-me-username">
+  <a href="https://github.com/liketocood345">liketocood345</a>
+</p>
+
+<p class="about-me-note">
+  由于账号内有其他公共项目，暂时不公布个人信息。
+</p>
+
+</div>

@@ -89,29 +89,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>&lt;=test_place_holder=&gt;</title>
+  <title>&lt;=test_place_holder=&gt;: 关于我</title>
 
-  <meta property="description" itemprop="description" content="&lt;=test_place_holder=&gt;"/>
+  <meta property="description" itemprop="description" content="GitHub 账号信息；暂不公布更多个人资料。"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="&lt;=test_place_holder=&gt;"/>
+  <meta property="og:title" content="&lt;=test_place_holder=&gt;: 关于我"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="&lt;=test_place_holder=&gt;"/>
+  <meta property="og:description" content="GitHub 账号信息；暂不公布更多个人资料。"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="&lt;=test_place_holder=&gt;"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="&lt;=test_place_holder=&gt;"/>
-  <meta property="twitter:description" content="&lt;=test_place_holder=&gt;"/>
+  <meta property="twitter:title" content="&lt;=test_place_holder=&gt;: 关于我"/>
+  <meta property="twitter:description" content="GitHub 账号信息；暂不公布更多个人资料。"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["<=test_place_holder=>"]},{"type":"character","attributes":{},"value":["<=test_place_holder=>"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["关于我"]},{"type":"character","attributes":{},"value":["GitHub 账号信息；暂不公布更多个人资料。"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2234,6 +2234,57 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     letter-spacing: 0.02em;
   }
 
+  /* About me page */
+  .about-me-profile {
+    text-align: center;
+    margin: 2rem auto 1rem;
+    max-width: 28rem;
+    padding: 1.5rem 1.25rem;
+    background: var(--cv-blue-light);
+    border-radius: 12px;
+    border: 1px solid rgba(51, 78, 108, 0.2);
+  }
+
+  .about-me-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 0 3px var(--cv-navy-mid);
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .about-me-avatar-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .about-me-username {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .about-me-username a {
+    color: var(--cv-navy-dark);
+    text-decoration: none;
+  }
+
+  .about-me-username a:hover {
+    color: var(--cv-navy-mid);
+    text-decoration: underline;
+  }
+
+  .about-me-note {
+    color: var(--cv-navy-slate);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(51, 78, 108, 0.25);
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2246,7 +2297,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"<=test_place_holder=>","description":"<=test_place_holder=>","authors":[]}
+{"title":"关于我","description":"GitHub 账号信息；暂不公布更多个人资料。","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2259,7 +2310,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">总览</a>
-<a href="about.html">&lt;=test_place_holder=&gt;</a>
+<a href="about.html">关于我</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2269,16 +2320,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>&lt;=test_place_holder=&gt;</h1>
+<h1>关于我</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>&lt;=test_place_holder=&gt;</p></p>
+<p><p>GitHub 账号信息；暂不公布更多个人资料。</p></p>
 </div>
 
 
 <div class="d-article">
-<p>&lt;=test_place_holder=&gt;</p>
+<div class="about-me-profile">
+<p><a href="https://github.com/liketocood345" class="about-me-avatar-link">
+<img src="https://avatars.githubusercontent.com/u/130688934?v=4"
+       alt="GitHub avatar"
+       class="about-me-avatar" />
+</a></p>
+<p class="about-me-username">
+<a href="https://github.com/liketocood345">liketocood345</a>
+</p>
+<p class="about-me-note">
+由于账号内有其他公共项目，暂时不公布个人信息。
+</p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
