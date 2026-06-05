@@ -54,6 +54,19 @@ for_hdat9800/
 - **GitHub Pages 设置**：`main` 分支，`/docs` 文件夹
 - **认证**：HTTPS + PAT（课程推荐）；不使用 Cursor 签名提交
 
+### 媒体与 Git LFS（默认不用）
+
+本机可安装 **Git LFS**；本仓库**默认不走 LFS**（GitHub 免费 LFS 约 1 GB，不适合当默认视频仓库）。
+
+| 类型 | 默认做法 |
+|------|----------|
+| 长视频 / 录屏 | YouTube（或同类）`<iframe>` 嵌入 |
+| 照片、小 GIF、PNG | 普通提交，与 `.Rmd` 同目录 |
+| 短视频自托管 | 仅极小文件（建议 < 10–20 MB）；否则用外链 |
+| Git LFS | **不启用**，除非你明确要求并知晓配额 |
+
+仓库内**不要**添加 `git lfs track` 或含 `filter=lfs` 的 `.gitattributes`，除非有意开启 LFS。
+
 ### 机器可读层（不影响页面外观）
 
 | 端点 | 用途 |
@@ -116,6 +129,17 @@ for_hdat9800/
 - 将截图保存为 `_posts/2026-06-05-test/title-badge.png`
 - 首页列表：在「测试」标题末尾追加徽章图
 - 博文页：在 `d-title` 标题末尾追加同一徽章图
+
+### 2026-06-05 — 博文「测试2视频外链」
+
+- 新增 `_posts/2026-06-05-test2-video-link/test2-video-link.Rmd`
+- 标题中文 **测试2视频外链**；正文 `test_video_link` + Bilibili 嵌入（BV19W7C64EcK）
+
+### 2026-06-05 — 媒体策略：保留 LFS 工具，仓库默认不用
+
+- 本机可保留 Git LFS；`for_hdat9800` 默认不 `git lfs track`
+- 大视频优先外链嵌入；小图/GIF 普通提交
+- 项目规则：`.cursor/rules/no-default-git-lfs.mdc`
 
 ### 2026-06-05 — Overview 自定义顶栏（仅首页）
 

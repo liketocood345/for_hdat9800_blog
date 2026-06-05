@@ -1,0 +1,32 @@
+---
+title: "测试2视频外链"
+description: |
+  Bilibili embed test (test_video_link).
+date: 2026-06-05
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## test_video_link
+
+This post embeds a Bilibili video as an external link test (`test_video_link`).
+
+Source: [EasyVtuberStudio on Bilibili](https://www.bilibili.com/video/BV19W7C64EcK/)
+
+```{=html}
+<div class="video-embed" style="max-width:960px;margin:1.25rem auto;">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0"
+    scrolling="no"
+    frameborder="0"
+    allowfullscreen="true"
+    title="EasyVtuberStudio Bilibili video"
+    style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;">
+  </iframe>
+</div>
+```
