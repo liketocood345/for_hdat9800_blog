@@ -3,10 +3,10 @@ title: "测试"
 description: |
   <=test_place_holder=>
 author:
-  - name: <=test_place_holder=>
-    url: https://example.com/<=test_place_holder=>
-    affiliation: <=test_place_holder=>
-    affiliation_url: https://example.com/<=test_place_holder=>
+  - name: "<=test_place_holder=>"
+    url: "https://example.com/<=test_place_holder=>"
+    affiliation: "<=test_place_holder=>"
+    affiliation_url: "https://example.com/<=test_place_holder=>"
 date: 2026-06-05
 output:
   distill::distill_article:
