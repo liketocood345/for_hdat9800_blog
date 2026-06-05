@@ -18,24 +18,31 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{=html}
-<style>
-d-title h1::after,
-.d-title h1::after {
-  content: "";
-  display: inline-block;
-  height: 2.4em;
-  width: 9em;
-  background: url("title-badge.png") no-repeat center / contain;
-  margin-left: 0.65rem;
-  vertical-align: middle;
-}
-d-title h1,
-.d-title h1 {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-</style>
+<script>
+(function () {
+  function injectArticleBadge() {
+    var h1 = document.querySelector("d-title h1, .d-title h1");
+    if (!h1 || h1.querySelector(".title-badge-slot")) return;
+    h1.classList.add("post-title-row");
+    var slot = document.createElement("span");
+    slot.className = "title-badge-slot";
+    slot.setAttribute("aria-hidden", "true");
+    var img = document.createElement("img");
+    img.src = "title-badge.png";
+    img.alt = "";
+    slot.appendChild(img);
+    h1.appendChild(slot);
+  }
+  function schedule() {
+    injectArticleBadge();
+    setTimeout(injectArticleBadge, 100);
+    setTimeout(injectArticleBadge, 500);
+  }
+  document.addEventListener("DOMContentLoaded", schedule);
+  window.addEventListener("WebComponentsReady", schedule);
+  window.addEventListener("load", schedule);
+})();
+</script>
 ```
 
 <=test_place_holder=>
