@@ -7,10 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
-  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
-  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
   body {
@@ -2124,6 +2121,12 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+<link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
+<link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
+<link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+<link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+
 <style type="text/css">
 /* Distill theme — visual style from CV (colors & geometry only; no résumé content) */
 
@@ -2516,11 +2519,71 @@ d-title h1 {
   margin-top: 0.5rem;
 }
 
+/* Media containers — all multimedia (video / iframe / image / audio) goes inside */
+:is(d-article, .d-article) .media-container,
+.media-container,
+.video-embed {
+  display: block;
+  margin: 1.25rem auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:is(d-article, .d-article) .media-container--large,
+.media-container--large,
+.video-embed--large {
+  max-width: 960px;
+}
+
+:is(d-article, .d-article) .media-container--medium,
+.media-container--medium,
+.video-embed--medium {
+  max-width: 640px;
+}
+
+:is(d-article, .d-article) .media-container--small,
+.media-container--small,
+.video-embed--small {
+  max-width: 400px;
+}
+
+:is(d-article, .d-article) .media-container :is(iframe, video, img, audio),
+.media-container :is(iframe, video, img, audio),
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+:is(d-article, .d-article) .media-container :is(iframe, video),
+.media-container :is(iframe, video),
+.video-embed iframe {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.media-container img {
+  height: auto;
+}
+
+/* Guardrail: bare multimedia outside a container shows a dashed outline */
+:is(d-article, .d-article) > :is(iframe, video, audio),
+:is(d-article, .d-article) > p > :is(iframe, video, audio) {
+  outline: 2px dashed var(--cv-navy-mid);
+  outline-offset: 3px;
+}
+
+:is(d-article, .d-article) .media-container :is(iframe, video, audio),
+.video-embed iframe {
+  outline: none;
+}
+
 </style>
 <!--/radix_placeholder_site_in_header-->
 
-
-  <link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
 
 </head>
 
@@ -2562,40 +2625,17 @@ d-title h1 {
 
 <div class="d-article">
 <h2 id="test_video_link">test_video_link</h2>
-<p>This post embeds a Bilibili video as an external link test (<code>test_video_link</code>).
-All multimedia uses the site default <strong>media-container</strong> wrappers (large / medium / small).</p>
+<p>This post embeds a Bilibili video as an external link test (<code>test_video_link</code>).</p>
 <p>Source: <a href="https://www.bilibili.com/video/BV19W7C64EcK/">EasyVtuberStudio on Bilibili</a></p>
-<h3 id="large-container-960px">Large container (960px)</h3>
-<div class="media-container media-container--large">
+<div class="video-embed" style="max-width:960px;margin:1.25rem auto;">
   <iframe
-    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
+    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0"
     scrolling="no"
     frameborder="0"
     allowfullscreen="true"
-    title="EasyVtuberStudio Bilibili video (large)"
-  ></iframe>
-</div>
-<h3 id="medium-container-640px">Medium container (640px)</h3>
-<p>Standard player controls: play / pause, progress bar, and volume. Autoplay off.</p>
-<div class="media-container media-container--medium">
-  <iframe
-    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
-    scrolling="no"
-    frameborder="0"
-    allowfullscreen="true"
-    title="EasyVtuberStudio Bilibili video (medium)"
-  ></iframe>
-</div>
-<h3 id="small-container-400px">Small container (400px)</h3>
-<p>Compact embed with the same controls and autoplay off.</p>
-<div class="media-container media-container--small">
-  <iframe
-    src="https://player.bilibili.com/player.html?bvid=BV19W7C64EcK&autoplay=0&danmaku=0&as_wide=1&high_quality=1"
-    scrolling="no"
-    frameborder="0"
-    allowfullscreen="true"
-    title="EasyVtuberStudio Bilibili video (small)"
-  ></iframe>
+    title="EasyVtuberStudio Bilibili video"
+    style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;">
+  </iframe>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

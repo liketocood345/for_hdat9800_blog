@@ -128,7 +128,7 @@ for_hdat9800/
 
 - 导航右上角设为「关于我」→ `about.html`
 - 页面展示 GitHub 头像与账号名 `liketocood345`
-- 底部注明：因账号内有其他公共项目，暂不公布个人信息
+- 底部注明：因账号另有其他公共仓库，暂不公开个人信息（About 页为英文）
 
 ### 2026-06-05 — 站点英文默认
 
@@ -178,11 +178,18 @@ for_hdat9800/
 - 新增 `theme.css`；`index.Rmd` 增加 `cv-home-deco` 几何装饰区
 - 色板：`#213347` `#2D4B6A` `#334E6C` `#D7E1ED` `#DEEBF6`
 
+### 2026-06-06 — 首篇实质博文：skill merge 作为学习方法
+
+- 新增 `_posts/2026-06-06-skill-merge-fastest-way-to-learn/` — **Guiding One Skill Merge Is the Fastest Way to Learn**
+- 英文正文；源稿 `blog0-skill_merge_is_the_best_way_to_learn/guided-skill-merge-fastest-way-to-learn.en.md`
+- About 页隐私说明改为英文（与站点默认语言一致）
+- Build 后 Overview 列表置顶显示该文
+
 ### 待办（可选）
 
 - [ ] Build 后脚本自动生成 `llms.txt`、`robots.txt`、`content/index.json`
 - [ ] 将占位符替换为正式站点文案
-- [ ] 基于 `9800/1.R` 撰写第一篇 ggplot2 课程博文
+- [ ] 基于 `9800/1.R` 撰写 ggplot2 课程博文
 
 ---
 

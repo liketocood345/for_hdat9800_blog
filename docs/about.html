@@ -7,10 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
-  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
-  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
   body {
@@ -2113,6 +2110,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
+  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
+  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+  <link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+
   <style type="text/css">
   /* Distill theme — visual style from CV (colors & geometry only; no résumé content) */
 
@@ -2505,10 +2508,72 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 0.5rem;
   }
 
+  /* Media containers — all multimedia (video / iframe / image / audio) goes inside */
+  :is(d-article, .d-article) .media-container,
+  .media-container,
+  .video-embed {
+    display: block;
+    margin: 1.25rem auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  :is(d-article, .d-article) .media-container--large,
+  .media-container--large,
+  .video-embed--large {
+    max-width: 960px;
+  }
+
+  :is(d-article, .d-article) .media-container--medium,
+  .media-container--medium,
+  .video-embed--medium {
+    max-width: 640px;
+  }
+
+  :is(d-article, .d-article) .media-container--small,
+  .media-container--small,
+  .video-embed--small {
+    max-width: 400px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video, img, audio),
+  .media-container :is(iframe, video, img, audio),
+  .video-embed iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video),
+  .media-container :is(iframe, video),
+  .video-embed iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .media-container img {
+    height: auto;
+  }
+
+  /* Guardrail: bare multimedia outside a container shows a dashed outline */
+  :is(d-article, .d-article) > :is(iframe, video, audio),
+  :is(d-article, .d-article) > p > :is(iframe, video, audio) {
+    outline: 2px dashed var(--cv-navy-mid);
+    outline-offset: 3px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video, audio),
+  .video-embed iframe {
+    outline: none;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+  <link rel="stylesheet" href="theme.css" type="text/css"/>
 
 </head>
 
@@ -2562,7 +2627,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </p>
 
 <p class="about-me-note">
-  由于账号内有其他公共项目，暂时不公布个人信息。
+  This account hosts other public repositories, so personal details are not shared here for now.
 </p>
 
 </div>

@@ -1,0 +1,53 @@
+---
+title: "Guiding One Skill Merge Is the Fastest Way to Learn"
+description: |
+  One merge is both study and the creation of a reusable AI asset—two birds, one stone.
+  On skill files, learning, and why fusion beats hoarding parallel prompts.
+author:
+  - name: "liketocood345"
+    url: "https://github.com/liketocood345"
+date: 2026-06-06
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+*One merge is both study and the creation of a reusable AI asset—two birds, one stone.*
+
+## What a skill file is
+
+A **skill file** is a document humans can read—and the AI can use. It holds instructions, habits, and context written as prompt material: what to do, what to avoid, when to stop and ask.
+
+In practice, skills sit in the background until **something in your message lines up** with what the skill is about—call it **keywords**, call it **intent**, the feeling is the same: the right skill **slides into the conversation** and fills in what you did not repeat this time. That is **implicit prompt completion**. You are not pasting the same block every turn.
+
+Good skills are **edited on purpose** or **pulled from real work**. They are small **knowledge assets**: not the whole library, but the part you want the agent to remember when the moment matches.
+
+## Learning works the same way—in your head
+
+When we learn, we:
+
+- Read and **turn it into our own words**.
+- Spot **tensions** between sources and keep both sides in view.
+- **Accept** ideas we have not lived yet, as long as they make sense—we prove them later.
+- Wire **shortcuts** in memory: when this cue shows up, take that action. Most of that wiring stays invisible until a **test** shows the gap.
+
+A skill file is the outward version of that. It is **knowledge bundled together**, plus **which cues should lead to which moves**. To grow, you update the bundle and the map—not start from zero every session.
+
+## The fastest path: merge with AI, don't hoard in parallel
+
+If that is what skills are, the fastest way to learn a new area is probably not:
+
+- hoarding many skills and hoping the agent guesses, or
+- one enormous file that copies everything and rots when sources change.
+
+It is to **sit with AI over skills that already exist** and **shape one skill of your own**: one entry story, clear branches, links back to source material instead of duplicating it.
+
+You **learn while you build**. What you build is something you can **run again**—a reusable AI asset. Study and output in one pass.
+
+So: **how do we actually carry out one skill merge?**
+
+That is not something you solve by typing *merge these skills* in a terminal. Perhaps the answer only shows up **in practice**.

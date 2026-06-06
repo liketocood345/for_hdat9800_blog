@@ -7,10 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
-  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
-  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
   <link rel="alternate" type="application/rss+xml" href="https://liketocood345.github.io/for_hdat9800/index.xml" />
 
   <style type="text/css">
@@ -2115,6 +2111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
+  <link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
+  <link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+  <link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+
   <style type="text/css">
   /* Distill theme — visual style from CV (colors & geometry only; no résumé content) */
 
@@ -2507,10 +2509,72 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 0.5rem;
   }
 
+  /* Media containers — all multimedia (video / iframe / image / audio) goes inside */
+  :is(d-article, .d-article) .media-container,
+  .media-container,
+  .video-embed {
+    display: block;
+    margin: 1.25rem auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  :is(d-article, .d-article) .media-container--large,
+  .media-container--large,
+  .video-embed--large {
+    max-width: 960px;
+  }
+
+  :is(d-article, .d-article) .media-container--medium,
+  .media-container--medium,
+  .video-embed--medium {
+    max-width: 640px;
+  }
+
+  :is(d-article, .d-article) .media-container--small,
+  .media-container--small,
+  .video-embed--small {
+    max-width: 400px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video, img, audio),
+  .media-container :is(iframe, video, img, audio),
+  .video-embed iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video),
+  .media-container :is(iframe, video),
+  .video-embed iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .media-container img {
+    height: auto;
+  }
+
+  /* Guardrail: bare multimedia outside a container shows a dashed outline */
+  :is(d-article, .d-article) > :is(iframe, video, audio),
+  :is(d-article, .d-article) > p > :is(iframe, video, audio) {
+    outline: 2px dashed var(--cv-navy-mid);
+    outline-offset: 3px;
+  }
+
+  :is(d-article, .d-article) .media-container :is(iframe, video, audio),
+  .video-embed iframe {
+    outline: none;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+  <link rel="stylesheet" href="theme.css" type="text/css"/>
 
 </head>
 
@@ -2676,6 +2740,24 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Overview">Overview</h1>
+<a href="posts/2026-06-06-skill-merge-fastest-way-to-learn/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 6, 2026</div>
+<div class="dt-authors">
+<div class="dt-author">liketocood345</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Guiding One Skill Merge Is the Fastest Way to Learn</h2>
+<div class="dt-tags"></div>
+<p>One merge is both study and the creation of a reusable AI asset—two birds, one stone.
+On skill files, learning, and why fusion beats hoarding parallel prompts.</p>
+</div>
+</a>
 <a href="posts/2026-06-05-test/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
