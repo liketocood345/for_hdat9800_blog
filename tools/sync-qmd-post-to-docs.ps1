@@ -34,13 +34,25 @@ Copy-Item $htmlPath (Join-Path $destDir "index.html") -Force
 
 $assetsSrc = Join-Path $PostDir "assets"
 if (Test-Path $assetsSrc) {
-    Copy-Item $assetsSrc (Join-Path $destDir "assets") -Recurse -Force
+    $assetsDest = Join-Path $destDir "assets"
+    New-Item -ItemType Directory -Force -Path $assetsDest | Out-Null
+    Copy-Item (Join-Path $assetsSrc "*") $assetsDest -Recurse -Force
 }
 
 $badgeSrc = Join-Path $PostDir "title-badge.png"
 if (Test-Path $badgeSrc) {
     Copy-Item $badgeSrc (Join-Path $destDir "title-badge.png") -Force
 }
+
+foreach ($skillDir in @("ggplot-hourglass", "hourglass-skill-merge-skill")) {
+    $skillSrc = Join-Path $PostDir $skillDir
+    if (-not (Test-Path $skillSrc)) { continue }
+    $skillDest = Join-Path $destDir $skillDir
+    New-Item -ItemType Directory -Force -Path $skillDest | Out-Null
+    Copy-Item (Join-Path $skillSrc "*") $skillDest -Recurse -Force
+}
+
+Copy-Item $qmd.FullName (Join-Path $destDir $qmd.Name) -Force
 
 function Get-QmdScalar($lines, $key) {
     $pattern = "^\s*$([regex]::Escape($key)):\s*(.+)\s*$"

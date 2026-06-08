@@ -59,6 +59,9 @@ foreach ($post in $posts) {
     if ($exit -ne 0) {
         throw "rmarkdown::render failed for $rel (exit $exit)"
     }
+
+    $postDirRel = (Split-Path $rel -Parent) -replace '\\', '/'
+    & (Join-Path $PSScriptRoot "sync-qmd-post-to-docs.ps1") -PostDir $postDirRel
 }
 
 Write-Host "Done."

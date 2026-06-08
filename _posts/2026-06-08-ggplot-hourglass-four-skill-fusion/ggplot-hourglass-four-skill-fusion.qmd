@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [Blog0](https://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn/) ends with a question: how do you actually carry out one skill merge? Perhaps the answer only shows up **in practice**. This post is one practice run—a **theory-first funnel** that folds four public plotting skills into a single **ggplot hourglass**, not a generic essay about skills.
 
-**Takeaways:** a fused domain skill ([`ggplot-hourglass`](#ggplot-hourglass-skill)) and an [`hourglass-skill-merge-skill`](#hourglass-skill-merge-skill). You get a maintainer-facing map of triggers, BIND decisions, and leaf pointers, plus an honest read on **Merged vs Linked** and when the architecture is worth the cost.
+**Takeaways:** a fused domain skill ([`ggplot-hourglass`](ggplot-hourglass/SKILL.md)) and an [`hourglass-skill-merge-skill`](hourglass-skill-merge-skill/SKILL.md). You get a maintainer-facing map of triggers, BIND decisions, and leaf pointers, plus an honest read on **Merged vs Linked** and when the architecture is worth the cost.
 
 ## Introduction
 
@@ -173,15 +173,10 @@ Full entry aliases live in `hourglass-waist-registry.yaml` and `references/inver
 
 ### Artifacts
 
-```{=html}
-<span id="ggplot-hourglass-skill"></span>
-<span id="hourglass-skill-merge-skill"></span>
-```
-
 | Artifact | Role |
 |----------|------|
-| [`ggplot-hourglass/SKILL.md`](#ggplot-hourglass-skill) | Thin fused entry—one funnel, not four parallel loads |
-| [`hourglass-skill-merge-skill/SKILL.md`](#hourglass-skill-merge-skill) | Meta skill—hourglass merge for any conflicting set |
+| [`ggplot-hourglass/SKILL.md`](ggplot-hourglass/SKILL.md) | Thin fused entry—one funnel, not four parallel loads |
+| [`hourglass-skill-merge-skill/SKILL.md`](hourglass-skill-merge-skill/SKILL.md) | Meta skill—hourglass merge for any conflicting set |
 | `hourglass-waist-registry.yaml` | Machine-readable entries, Γ, mutex, leaves |
 | `hourglass-skill-architecture.md` | Theory: multi-hourglass, belt, anti-patterns |
 | `hourglass-unified-funnel.md` | Schema-level funnel diagram |

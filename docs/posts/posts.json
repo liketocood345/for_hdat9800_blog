@@ -1,65 +1,91 @@
-[
-  {
-    "path": "posts/2026-06-08-ggplot-hourglass-four-skill-fusion/",
-    "title": "Fusing Four Plotting Skills into One ggplot Hourglass",
-    "description": "blog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.",
-    "author": [
-      {
-        "name": "liketocood345",
-        "url": "https://github.com/liketocood345"
-      }
-    ],
-    "date": "2026-06-08",
-    "categories": [],
-    "contents": "\r\nOne funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.\r\nBlog0 ends with a question: how do you actually carry out one skill merge? Perhaps the answer only shows up in practice. This post is one practice run—a theory-first funnel that folds four public plotting skills into a single ggplot hourglass, not a generic essay about skills.\r\nTakeaways: a fused domain skill (ggplot-hourglass) and an hourglass-skill-merge-skill. You get a maintainer-facing map of triggers, BIND decisions, and leaf pointers, plus an honest read on Merged vs Linked and when the architecture is worth the cost.\r\nIntroduction\r\nBlog0 argues that merge and learning are the same move. Blog1 is the case study: four GitHub plotting skills folded into one ggplot hourglass (waist record + BIND). I do not repeat Blog0 in full.\r\nIn one line: four fairly matched parallel skills → one Cursor entry → staged commits → one leaf pointing at an upstream § section. What is new is the routing protocol; templates and CLI link back to source repos—they are not pasted into a fifth encyclopedia.\r\nBackground\r\nWhy four skills show up together\r\nSay “visualize this table,” “journal PDF,” “fix this plot,” or “Nature-style reference,” and Cursor may reasonably match all of:\r\nUpstream\r\nOne-line role\r\nTypical triggers\r\nggplot-skills\r\nR ggplot2 templates + review checklist\r\nggplot, visualize, fix plot\r\nscientific-plotting-skill\r\nManuscript rules (palette, size, no title)\r\nmanuscript, journal, PDF\r\nrosetta data-visualization\r\nPython figures + journal size table\r\nmatplotlib, Figure 1/2/3\r\nAgentFigureGallery\r\nQuery → gallery → human select → bundle\r\ngallery, reference, Nature style\r\nEach match is valid. Loaded in parallel, the agent sees duplicate leaves, norm conflicts (titled EDA vs no-title PDF), and gallery vs explore fighting for the same utterance. The problem is not missing knowledge—it is unclear topology. Merge needs a maintainable protocol, not a longer prose file.\r\nFor HDAT9800, health tables like medicaldata::diabetes anchor the BIND walkthrough below; they are not the main narrative.\r\nHow the four skills attach to one funnel\r\nUpstream\r\nRole in the hourglass\r\nggplot-skills\r\nPrimary R positive-tree leaves + review checklist\r\nscientific-plotting-skill\r\nBelt overlay—not a fifth full funnel\r\nrosetta data-visualization\r\nstack=python branch\r\nAgentFigureGallery\r\nEntire mode=gallery branch + STOP\r\nMutex example: keywords manuscript, paper, PDF win over explore.\r\nWhat we built\r\nHourglass topology: inverse tree → waist → positive tree\r\n      \\        inverse tree: utterance → waist (wide → narrow)     /\r\n       \\          phrases → mode / data / constraints             /\r\n        \\________________________     ___________________________/\r\n                        ▼  waist (weak-convergence record)\r\n      ╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾╲\r\n     ╱ positive tree: waist → one deliverable leaf (narrow → wide) ╲\r\n    ╱     template § / export / CLI / follow-up questions           ╲\r\nSegment\r\nDirection\r\nJob\r\nInverse tree\r\nwide → narrow\r\nMap utterances to waist fields (entries aliases)\r\nWaist\r\nbottleneck\r\n{mode, data, chart?, delivery, stack, overlay[]} with staged commits\r\nPositive tree\r\nnarrow → wide\r\nAfter BIND, open one upstream § leaf\r\nTriggers live on the inverse tree; irreversible choices commit at the waist; deliverables live on positive-tree leaves. One waist record replaces a combinatorial mega-enum (explore×bar×png×…):\r\nwaist_active:\r\n  mode: explore\r\n  data: threshold-categorical\r\n  chart: bar-template      # committed at T1 BIND\r\n  delivery: png-dpi-800\r\n  stack: r\r\noverlay:\r\n  - scientific-plotting    # belt when manuscript\r\nAll four repos hang on one funnel—not four parallel entry files. Phase pipeline (abbreviated):\r\nInverse   utterance → mode (+ stack, overlay)\r\nT0        profile(columns) → data\r\nT1 BIND ★  Γ(data) → δ → commit → chart + leaf\r\nBelt      scientific overlay if manuscript\r\nT2 STOP   gallery only — until human select\r\nT3        render one leaf\r\nMaintainer map: Figure 1\r\nOrdinary skills are long markdown plus a YAML description. The hourglass externalizes what maintainers need to see:\r\nTriggers — inverse-tree entries (visualize_table ≈ plot_xlsx → mode=explore)\r\nDecisions — waist zones and the BIND gate (T0 profile → Γ + δ → commit chart)\r\nOutputs — positive-tree leaf pointers (ggplot templates, scientific belt, rosetta figures, gallery CLI)\r\n\r\n  \r\nFigure 1 — Concept graph (row layout). Top: inverse entries; middle: waist field zones (Z0–Z3); bottom: positive-tree leaves and upstream pointers. T0/T1/BIND phases are annotated at the sides. This is a maintainer’s map, not the full spec the agent loads every turn.\r\nOptional funnel log turns implicit routing into a replayable trace:\r\n[inverse]  entry=visualize_table → mode=explore, stack=r\r\n[T0]       profile → data=threshold-categorical\r\n[BIND T1]  Γ allow=[bar,heatmap] δ=bar-template → chart=bar-template\r\n[T3]       leaf=ggplot-skills § Bar Chart | delivery=png-dpi-800\r\nBIND: where chart type is decided\r\nChart choice does not finish at the inverse-tree exit. Field chart sits on waist zone Z2 and commits at T1 BIND (Γ(data) → default δ → optional P0 user words → commit). Before BIND, chart is pending.\r\n\r\n  \r\nFigure 2 — BIND flow (T1 × Z2). T0 profile → allowed charts Γ(data) → default δ → commit waist.chart and leaf pointer. Chart semantics center here, not at the top of the inverse tree.\r\nFigure 1 vs Figure 2: Figure 1 is global routing and four-skill attachment; Figure 2 is the chart decision on explore/manuscript paths (review uses skip_bind; gallery commits chart only after human select).\r\nHealth-data walkthrough: continuous vs mistaken bar\r\nIn medicaldata::diabetes, age × BMI is a pair of continuous columns:\r\nStep\r\nContinuous (correct)\r\nBar chart (BIND mistake)\r\nT0\r\ndata=continuous\r\nForce bins → threshold-categorical\r\nΓ\r\nallow scatter / box / violin\r\nallow bar / stacked-bar\r\nδ\r\nscatter-repel\r\nbar-template\r\nLeaf\r\nggplot-skills § Scatter\r\n§ Bar Chart\r\nlibrary(ggplot2)\r\nlibrary(medicaldata)\r\n\r\nggplot(diabetes, aes(x = age, y = bmi)) +\r\n  geom_point()\r\nThat is not a broken ggplot template—it is data and chart misaligned before BIND. The course anchor shows that a merged skill can expose testable routing, not just more prose.\r\nFour modes, one waist\r\nMode\r\nExample utterance\r\nPath\r\nUpstream\r\nexplore\r\nvisualize table / EDA\r\nT0 → BIND → render\r\nggplot-skills templates\r\nmanuscript\r\njournal PDF / paper\r\nsame + scientific belt\r\nggplot + scientific\r\nreview\r\nfix this plot\r\nshort checklist, skip_bind\r\nggplot-skills review\r\ngallery\r\nNature style / pick reference\r\nSTOP until human select\r\nAgentFigureGallery\r\nFull entry aliases live in hourglass-waist-registry.yaml and references/inverse-entries.md—not duplicated here.\r\nArtifacts\r\n\r\n\r\nArtifact\r\nRole\r\nggplot-hourglass/SKILL.md\r\nThin fused entry—one funnel, not four parallel loads\r\nhourglass-skill-merge-skill/SKILL.md\r\nMeta skill—hourglass merge for any conflicting set\r\nhourglass-waist-registry.yaml\r\nMachine-readable entries, Γ, mutex, leaves\r\nhourglass-skill-architecture.md\r\nTheory: multi-hourglass, belt, anti-patterns\r\nhourglass-unified-funnel.md\r\nSchema-level funnel diagram\r\nHTML viewer + chart-selection\r\nFull interactive / static pages (workspace assets)\r\nMerged: orchestration shell, registry, reference shards. Linked: upstream SKILL.md sections and templates—pointers, not copies—aligned with Blog0’s links back to source material instead of duplicating.\r\nDiscussion\r\nWhen the hourglass is overkill\r\nFor “just make a scatter plot,” inverse tree + waist + mutex + belt + BIND is heavy architecture—the deliverable is one geom_point().\r\nLess agent slack — skills shine on semantic trigger + parallel checklists; a hard funnel can feel tight when the user pivots mid-chat.\r\nMaintenance — figures track hourglass-waist-registry.yaml, aliases, and leaf pointers when upstream repos change.\r\nFusion ≠ copy — simple jobs can open ggplot-skills directly without BIND.\r\nWorth it when modes stack (EDA + manuscript + review + gallery + R/Python fork). Skip it for single-intent, single-chart tasks. A merge product does not have to be an hourglass.\r\nWhy the waist does not look chart-first\r\nchart is on the waist and is the semantic center of the deliverable. It looks small on the overview map because:\r\nThe waist is a multi-field record (mode · data · chart? · delivery · stack · overlay[]), not a chart enum; chart is nullable until T1.\r\nLate binding — users say “visualize this table,” not “bar chart”; T0 profile and Γ(data) narrow allowed charts first.\r\nInverse tree commits mode first — review does not pick a new figure; gallery gets chart from human select. A waist that collapsed to {bar|scatter|…} alone would squeeze those paths out.\r\nSame chart, different mode — explore bar vs manuscript bar share a geom; belt and delivery distinguish them.\r\n\r\nChart type is what matters most for the deliverable—but it commits at BIND, after task class and data feasibility narrow the options. Figure 2 pulls that weight back into view.\r\n\r\nWhat we merged, what we linked, and what fusion actually is\r\nFusion did not glue four SKILL.md files into a fifth twin. The product is a thin router + registry + leaf pointers—four capabilities mounted, typically one leaf deep-read per turn.\r\nType\r\nExamples\r\nRelation to upstream\r\nLinked\r\nFour repos’ SKILL.md, templates, CLI\r\nBodies not copied; leaves point to § sections\r\nMerged\r\nggplot-hourglass/SKILL.md, references/\r\nNew orchestration (~hundreds of lines)\r\nMerged\r\nhourglass-waist-registry.yaml\r\nNew machine-readable routing (~hundred lines)\r\nMeta\r\nhourglass-*.md, HTML viewer\r\nMaintainer map; not deliverable body\r\nHow much comes from the four upstream skills?\r\nAs new files: the fusion layer is ~0% literal copy of upstream template prose.\r\nAt runtime after BIND: the opened leaf is ~100% upstream text—the fusion layer does not rewrite templates.\r\nAs capability registration: the registry mounts all four skills; Do not load all four upstream SKILL files every turn means mount ≠ parallel read.\r\nggplot-hourglass (single entry) → BIND → one leaf → upstream § section\r\nHow we keep the fused skill honest\r\nLeaf pointers are diffable against source; the registry is the single source for entries, Γ, mutex, and leaves; BIND runs Γ → δ → commit; funnel logs replay routing; gallery STOP and review skip_bind block wrong chart commits; default paths must state assumptions explicitly.\r\nCorrectness lives in routing and pointers—not in description semantics hitting 100% every time.\r\n\r\nCorrectness lives in committed waist fields and leaf pointers—not in merging four SKILL bodies into one file.\r\n\r\nIs fusion just an index?\r\nPartly—leaf tables and entry aliases are index-like. It also adds law no single upstream skill contains: a four-mode taxonomy, BIND+Γ, a scientific belt orthogonal to the positive tree, mutex/conflict_matrix, phased waist commits, and gallery STOP edges.\r\n\r\nFusion = single-entry router with commit protocol + conflict matrix + maintainer map; the index is one layer, not the whole.\r\n\r\nWhat the diagram does not guarantee\r\nGood for: entry aliases and mode forks; BIND chart/leaves (with Figure 2); belt, stack, and STOP edges maintainers must see at a glance.\r\nNot guaranteed: Cursor description matching every alias on the figure; T0 profile(data) on your actual table (figures are schema); gallery content before human select; registry and leaf pointers staying in sync—a stale diagram misleads if it is your only spec.\r\n\r\nThe hourglass figure is a maintainer’s map, not the agent’s full specification. Confidence should track BIND commits and leaf opens, not diagram familiarity.\r\n\r\nAfter those limits: when four plotting skills collide, one waist + BIND still beats four parallel bodies—but a lone ggplot task may be faster through upstream prose alone.\r\nRelated work: the hourglass looks familiar—what’s actually new?\r\nNarrow waist, utterance convergence, and lazy expansion are familiar—Internet/AIN hourglass, intent routing, compiler IR, fan-in funnels, and Agent Skills progressive disclosure (metadata first, body on activation). Recent skill-graph retrieval work organizes libraries; this case targets Cursor multi-skill mutex when triggers overlap—a different problem domain.\r\nBorrowed idea\r\nHourglass use\r\nNarrow waist\r\nWaist record as commit layer; upstream repos do not pairwise reference each other\r\nIntent routing / decision trees\r\nInverse entries → mode; mutex resolves conflicts\r\nProgressive disclosure\r\nThin ggplot-hourglass/SKILL.md → one leaf after BIND\r\nIR / fan-in\r\nvisualize_table ≈ plot_xlsx → same waist fields\r\nAdded in this ggplot practice:\r\nInverse and positive trees as first-class topology — explicit converge → waist → expand; review vs gallery depth in registry.\r\nWeak-convergence waist record — staged commits, not combinatorial prose.\r\nBIND gate (T1 × Z2) — four repos meet on chart, not four SKILL.md files fighting for geom.\r\nBelt orthogonal to positive tree — scientific-plotting as overlay, not a fifth funnel.\r\nRegistry + funnel log — testable routing beyond parallel descriptions.\r\nMaintainer map vs thin agent entry — figures/registry for humans; agent defers four upstream bodies and opens one leaf.\r\n\r\nWe did not invent the hourglass. We used it as a maintainer-facing protocol for merging conflicting plotting skills—waist record, BIND, belt, and leaf pointers.\r\n\r\nLinks\r\nResource\r\nURL\r\nBlog0\r\nhttps://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn/\r\nggplot-skills\r\nhttps://github.com/Broccolito/ggplot-skills\r\nscientific-plotting-skill\r\nhttps://github.com/dazhiyang/scientific-plotting-skill\r\nawesome-rosetta-skills\r\nhttps://github.com/xjtulyc/awesome-rosetta-skills\r\nAgentFigureGallery\r\nhttps://github.com/Dsadd4/AgentFigureGallery\r\nClosing\r\nBlog0 asks what one skill merge looks like in practice. This ggplot attempt answers with a theory-shaped funnel: inverse tree to fix triggers, waist to stage commits (chart at BIND, not at the top), positive tree to a single leaf, visualization for maintainers, and an honest scope for when the machinery costs more than it saves.\r\nMerge in practice can look like this—without pretending every future merge must be an hourglass.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2026-06-08T16:50:37+10:00",
-    "input_file": "ggplot-hourglass-four-skill-fusion.knit.md"
-  },
-  {
-    "path": "posts/2026-06-06-skill-merge-fastest-way-to-learn/",
-    "title": "Guiding One Skill Merge Is the Fastest Way to Learn",
-    "description": "blog0-One merge is both study and the creation of a reusable AI asset—two birds, one stone.",
-    "author": [
-      {
-        "name": "liketocood345",
-        "url": "https://github.com/liketocood345"
-      }
-    ],
-    "date": "2026-06-06",
-    "categories": [],
-    "contents": "\r\nOne merge is both study and the creation of a reusable AI asset—two birds, one stone.\r\nWhat a skill file is\r\nA skill file is a document humans can read—and the AI can use. It holds instructions, habits, and context written as prompt material: what to do, what to avoid, when to stop and ask.\r\nIn practice, skills sit in the background until something in your message lines up with what the skill is about—call it keywords, call it intent, the feeling is the same: the right skill slides into the conversation and fills in what you did not repeat this time. That is implicit prompt completion. You are not pasting the same block every turn.\r\nGood skills are edited on purpose or pulled from real work. They are small knowledge assets: not the whole library, but the part you want the agent to remember when the moment matches.\r\nLearning works the same way—in your head\r\nWhen we learn, we:\r\nRead and turn it into our own words.\r\nSpot tensions between sources and keep both sides in view.\r\nAccept ideas we have not lived yet, as long as they make sense—we prove them later.\r\nWire shortcuts in memory: when this cue shows up, take that action. Most of that wiring stays invisible until a test shows the gap.\r\nA skill file is the outward version of that. It is knowledge bundled together, plus which cues should lead to which moves. To grow, you update the bundle and the map—not start from zero every session.\r\nThe fastest path: merge with AI, don’t hoard in parallel\r\nIf that is what skills are, the fastest way to learn a new area is probably not:\r\nhoarding many skills and hoping the agent guesses, or\r\none enormous file that copies everything and rots when sources change.\r\nIt is to sit with AI over skills that already exist and shape one skill of your own: one entry story, clear branches, links back to source material instead of duplicating it.\r\nYou learn while you build. What you build is something you can run again—a reusable AI asset. Study and output in one pass.\r\nSo: how do we actually carry out one skill merge?\r\nThat is not something you solve by typing merge these skills in a terminal. Perhaps the answer only shows up in practice.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2026-06-06T20:27:52+10:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2026-06-05-test/",
-    "title": "测试",
-    "description": "<=test_place_holder=>",
-    "author": [
-      {
-        "name": "<=test_place_holder=>",
-        "url": "https://example.com/<=test_place_holder=>"
-      }
-    ],
-    "date": "2026-06-05",
-    "categories": [],
-    "contents": "\r\n<=test_place_holder=>\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2026-06-05T17:29:04+10:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2026-06-05-test2-video-link/",
-    "title": "测试2视频外链",
-    "description": "Bilibili embed test (test_video_link).",
-    "author": [],
-    "date": "2026-06-05",
-    "categories": [],
-    "contents": "\r\ntest_video_link\r\nThis post embeds a Bilibili video as an external link test (test_video_link).\r\nSource: EasyVtuberStudio on Bilibili\r\n\r\n  \r\n  \r\n\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2026-06-05T18:02:35+10:00",
-    "input_file": {}
-  }
+﻿[
+    {
+        "path":  "posts/2026-06-08-ggplot-hourglass-four-skill-fusion/",
+        "title":  "Fusing Four Plotting Skills into One ggplot Hourglass",
+        "description":  "blog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.",
+        "author":  [
+                       {
+                           "name":  "liketocood345",
+                           "url":  "https://github.com/liketocood345"
+                       }
+                   ],
+        "date":  "2026-06-08",
+        "categories":  [
+
+                       ],
+        "contents":  "\r\nblog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.\r\n\r\n\r\n",
+        "preview":  {
+
+                    },
+        "last_modified":  "2026-06-08T16:56:32+10:00",
+        "input_file":  {
+
+                       }
+    },
+    {
+        "path":  "posts/2026-06-06-skill-merge-fastest-way-to-learn/",
+        "title":  "Guiding One Skill Merge Is the Fastest Way to Learn",
+        "description":  "blog0-One merge is both study and the creation of a reusable AI asset—two birds, one stone.",
+        "author":  [
+                       {
+                           "name":  "liketocood345",
+                           "url":  "https://github.com/liketocood345"
+                       }
+                   ],
+        "date":  "2026-06-06",
+        "categories":  [
+
+                       ],
+        "contents":  "\r\nOne merge is both study and the creation of a reusable AI asset—two birds, one stone.\r\nWhat a skill file is\r\nA skill file is a document humans can read—and the AI can use. It holds instructions, habits, and context written as prompt material: what to do, what to avoid, when to stop and ask.\r\nIn practice, skills sit in the background until something in your message lines up with what the skill is about—call it keywords, call it intent, the feeling is the same: the right skill slides into the conversation and fills in what you did not repeat this time. That is implicit prompt completion. You are not pasting the same block every turn.\r\nGood skills are edited on purpose or pulled from real work. They are small knowledge assets: not the whole library, but the part you want the agent to remember when the moment matches.\r\nLearning works the same way—in your head\r\nWhen we learn, we:\r\nRead and turn it into our own words.\r\nSpot tensions between sources and keep both sides in view.\r\nAccept ideas we have not lived yet, as long as they make sense—we prove them later.\r\nWire shortcuts in memory: when this cue shows up, take that action. Most of that wiring stays invisible until a test shows the gap.\r\nA skill file is the outward version of that. It is knowledge bundled together, plus which cues should lead to which moves. To grow, you update the bundle and the map—not start from zero every session.\r\nThe fastest path: merge with AI, don’t hoard in parallel\r\nIf that is what skills are, the fastest way to learn a new area is probably not:\r\nhoarding many skills and hoping the agent guesses, or\r\none enormous file that copies everything and rots when sources change.\r\nIt is to sit with AI over skills that already exist and shape one skill of your own: one entry story, clear branches, links back to source material instead of duplicating it.\r\nYou learn while you build. What you build is something you can run again—a reusable AI asset. Study and output in one pass.\r\nSo: how do we actually carry out one skill merge?\r\nThat is not something you solve by typing merge these skills in a terminal. Perhaps the answer only shows up in practice.\r\n\r\n\r\n\r\n",
+        "preview":  {
+
+                    },
+        "last_modified":  "2026-06-06T20:27:52+10:00",
+        "input_file":  {
+
+                       }
+    },
+    {
+        "path":  "posts/2026-06-05-test/",
+        "title":  "测试",
+        "description":  "\u003c=test_place_holder=\u003e",
+        "author":  [
+                       {
+                           "name":  "\u003c=test_place_holder=\u003e",
+                           "url":  "https://example.com/\u003c=test_place_holder=\u003e"
+                       }
+                   ],
+        "date":  "2026-06-05",
+        "categories":  [
+
+                       ],
+        "contents":  "\r\n\u003c=test_place_holder=\u003e\r\n\r\n\r\n\r\n",
+        "preview":  {
+
+                    },
+        "last_modified":  "2026-06-05T17:29:04+10:00",
+        "input_file":  {
+
+                       }
+    },
+    {
+        "path":  "posts/2026-06-05-test2-video-link/",
+        "title":  "测试2视频外链",
+        "description":  "Bilibili embed test (test_video_link).",
+        "author":  [
+
+                   ],
+        "date":  "2026-06-05",
+        "categories":  [
+
+                       ],
+        "contents":  "\r\ntest_video_link\r\nThis post embeds a Bilibili video as an external link test (test_video_link).\r\nSource: EasyVtuberStudio on Bilibili\r\n\r\n  \r\n  \r\n\r\n\r\n\r\n\r\n",
+        "preview":  {
+
+                    },
+        "last_modified":  "2026-06-05T18:02:35+10:00",
+        "input_file":  {
+
+                       }
+    }
 ]
