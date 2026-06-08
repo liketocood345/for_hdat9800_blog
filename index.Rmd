@@ -31,25 +31,26 @@ All blog posts are listed below, with the most recent at the top.
 <p class="overview-pageviews" aria-label="Homepage visit count">
   Page visits: <span id="site-pageview-count" aria-live="polite">—</span>
 </p>
-<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
-```
-
-```{=html}
 <script>
 (function () {
   if (!document.body.classList.contains("layout-listing")) return;
 
+  var PAGE_VIEW_API = "https://api.counterapi.dev/v1/liketocood345/for-hdat9800-home/up";
+
   function recordPageView() {
     var el = document.getElementById("site-pageview-count");
     if (!el || el.dataset.recorded === "1") return;
-    if (typeof Counter === "undefined") return;
     el.dataset.recorded = "1";
-    var counter = new Counter({ workspace: "liketocood345" });
-    counter.up("for-hdat9800-home")
-      .then(function (result) {
-        if (result && typeof result.value === "number") {
-          el.textContent = result.value.toLocaleString("en-US");
-        }
+    el.textContent = "…";
+    fetch(PAGE_VIEW_API, { method: "GET", mode: "cors", credentials: "omit" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        var n = data && (typeof data.count === "number" ? data.count : data.value);
+        if (typeof n !== "number") throw new Error("bad count");
+        el.textContent = n.toLocaleString("en-US");
       })
       .catch(function () {
         el.textContent = "—";
