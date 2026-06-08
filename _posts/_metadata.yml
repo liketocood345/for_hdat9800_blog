@@ -1,3 +1,3 @@
 # Shared defaults for _posts/**/*.qmd when rendered via rmarkdown::render().
-# Site-wide theme/nav come from _site.yml (theme.css + favicon.html).
+# Site-wide theme/nav are injected at sync time (tools/sync-qmd-post-to-docs.ps1).
 # Per-post YAML should set: output: distill::distill_article: self_contained: false

@@ -54,6 +54,60 @@ foreach ($skillDir in @("ggplot-hourglass", "hourglass-skill-merge-skill")) {
 
 Copy-Item $qmd.FullName (Join-Path $destDir $qmd.Name) -Force
 
+function Repair-QmdDistillHtml {
+    param(
+        [string]$HtmlPath,
+        [string]$PostFolder,
+        [string]$SiteRoot
+    )
+
+    $baseUrl = "https://liketocood345.github.io/for_hdat9800"
+    $canonical = "$baseUrl/posts/$PostFolder/"
+    $html = Get-Content $HtmlPath -Raw -Encoding UTF8
+
+    # Per-post *_files/ libs are not copied to docs; use shared site_libs like Rmd posts.
+    $html = $html -replace '[\w-]+_files/', '../../site_libs/'
+
+    $faviconPath = Join-Path $SiteRoot "favicon.html"
+    if (Test-Path $faviconPath) {
+        $siteHeader = (Get-Content $faviconPath -Raw -Encoding UTF8).Trim()
+        $html = $html -replace '(?s)<!--radix_placeholder_site_in_header-->\s*<!--/radix_placeholder_site_in_header-->', "<!--radix_placeholder_site_in_header-->`n$siteHeader`n<!--/radix_placeholder_site_in_header-->"
+    }
+
+    $navBlock = @"
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">HDAT9800 Blog</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Overview</a>
+<a href="../../about.html">About Me</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+"@
+    $html = $html -replace '(?s)<!--radix_placeholder_navigation_before_body-->\s*<!--/radix_placeholder_navigation_before_body-->', $navBlock
+
+    if ($html -notmatch 'rel="canonical"') {
+        $html = $html -replace '(<!--radix_placeholder_meta_tags-->)', "`$1`n<link rel=`"canonical`" href=`"$canonical`"/>`n<meta property=`"og:url`" content=`"$canonical`"/>`n<meta property=`"twitter:url`" content=`"$canonical`"/>"
+    }
+
+    # If Distill JS fails to load, avoid a permanently hidden page.
+    if ($html -notmatch 'noscript body') {
+        $html = $html -replace '(body \{\s*\n\s*visibility: hidden;\s*\n\s*\})', "`$1`n  noscript body { visibility: visible !important; }"
+    }
+
+    [System.IO.File]::WriteAllText($HtmlPath, $html, [System.Text.UTF8Encoding]::new($false))
+}
+
+$destHtml = Join-Path $destDir "index.html"
+Repair-QmdDistillHtml -HtmlPath $destHtml -PostFolder $folder -SiteRoot $Root
+
 function Get-QmdScalar($lines, $key) {
     $pattern = "^\s*$([regex]::Escape($key)):\s*(.+)\s*$"
     foreach ($line in $lines) {

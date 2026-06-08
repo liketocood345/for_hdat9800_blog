@@ -13,6 +13,7 @@
   body {
     visibility: hidden;
   }
+  noscript body { visibility: visible !important; }
   </style>
 
  <!--radix_placeholder_import_source-->
@@ -89,6 +90,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
+<link rel="canonical" href="https://liketocood345.github.io/for_hdat9800/posts/2026-06-08-ggplot-hourglass-four-skill-fusion/"/>
+<meta property="og:url" content="https://liketocood345.github.io/for_hdat9800/posts/2026-06-08-ggplot-hourglass-four-skill-fusion/"/>
+<meta property="twitter:url" content="https://liketocood345.github.io/for_hdat9800/posts/2026-06-08-ggplot-hourglass-four-skill-fusion/"/>
   <title>Fusing Four Plotting Skills into One ggplot Hourglass</title>
 
   <meta property="description" itemprop="description" content="blog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record."/>
@@ -119,7 +123,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["assets/hourglass-chart-selection-thumb.png","assets/hourglass-graph-viewer-thumb.png","ggplot-hourglass/SKILL.md","ggplot-hourglass-four-skill-fusion.qmd","ggplot-hourglass-four-skill-fusion_files/anchor-4.2.2/anchor.min.js","ggplot-hourglass-four-skill-fusion_files/bowser-1.9.3/bowser.min.js","ggplot-hourglass-four-skill-fusion_files/distill-2.2.21/template.v2.js","ggplot-hourglass-four-skill-fusion_files/header-attrs-2.31/header-attrs.js","ggplot-hourglass-four-skill-fusion_files/jquery-3.6.0/jquery-3.6.0.js","ggplot-hourglass-four-skill-fusion_files/jquery-3.6.0/jquery-3.6.0.min.js","ggplot-hourglass-four-skill-fusion_files/jquery-3.6.0/jquery-3.6.0.min.map","ggplot-hourglass-four-skill-fusion_files/popper-2.6.0/popper.min.js","ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy-bundle.umd.min.js","ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy-light-border.css","ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy.css","ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy.umd.min.js","ggplot-hourglass-four-skill-fusion_files/webcomponents-2.0.0/webcomponents.js","hourglass-skill-merge-skill/SKILL.md","title-badge.png"]}
+  {"type":"character","attributes":{},"value":["assets/hourglass-chart-selection-thumb.png","assets/hourglass-graph-viewer-thumb.png","ggplot-hourglass/SKILL.md","ggplot-hourglass-four-skill-fusion.qmd","../../site_libs/anchor-4.2.2/anchor.min.js","../../site_libs/bowser-1.9.3/bowser.min.js","../../site_libs/distill-2.2.21/template.v2.js","../../site_libs/header-attrs-2.31/header-attrs.js","../../site_libs/jquery-3.6.0/jquery-3.6.0.js","../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js","../../site_libs/jquery-3.6.0/jquery-3.6.0.min.map","../../site_libs/popper-2.6.0/popper.min.js","../../site_libs/tippy-6.2.7/tippy-bundle.umd.min.js","../../site_libs/tippy-6.2.7/tippy-light-border.css","../../site_libs/tippy-6.2.7/tippy.css","../../site_libs/tippy-6.2.7/tippy.umd.min.js","../../site_libs/webcomponents-2.0.0/webcomponents.js","hourglass-skill-merge-skill/SKILL.md","title-badge.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1501,18 +1505,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="ggplot-hourglass-four-skill-fusion_files/header-attrs-2.31/header-attrs.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/popper-2.6.0/popper.min.js"></script>
-  <link href="ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="ggplot-hourglass-four-skill-fusion_files/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/anchor-4.2.2/anchor.min.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="ggplot-hourglass-four-skill-fusion_files/distill-2.2.21/template.v2.js"></script>
+  <script src="../../site_libs/header-attrs-2.31/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <!--/radix_placeholder_site_in_header-->
+<link rel="icon" href="/for_hdat9800/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="/for_hdat9800/favicon.png" />
+<link rel="shortcut icon" href="/for_hdat9800/favicon.ico" />
+<link rel="apple-touch-icon" href="/for_hdat9800/favicon.png" />
+<link rel="stylesheet" href="/for_hdat9800/theme.css" type="text/css" />
+<!--/radix_placeholder_site_in_header-->
 
 
 </head>
@@ -1527,6 +1536,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">HDAT9800 Blog</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Overview</a>
+<a href="../../about.html">About Me</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
