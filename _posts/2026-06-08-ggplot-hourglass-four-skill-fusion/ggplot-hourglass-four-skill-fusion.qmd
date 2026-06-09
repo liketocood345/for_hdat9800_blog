@@ -1,5 +1,5 @@
 ﻿---
-title: "Fusing Four Plotting Skills into One ggplot Hourglass"
+title: "Skill Merge Attempt: A Pure Theoretical Attempt on ggplot Skill with Hourglass Frame"
 description: |
   blog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.
 author:
