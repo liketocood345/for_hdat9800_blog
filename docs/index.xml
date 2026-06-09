@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>HDAT9800 Blog</title>
-    <link>https://liketocood345.github.io/for_hdat9800</link>
-    <atom:link href="https://liketocood345.github.io/for_hdat9800/index.xml" rel="self" type="application/rss+xml"/>
+    <link>https://liketocood345.github.io/for_hdat9800_blog</link>
+    <atom:link href="https://liketocood345.github.io/for_hdat9800_blog/index.xml" rel="self" type="application/rss+xml"/>
     <description>Health data science blog — visualisation, communication, and reproducible analysis.
 </description>
     <generator>Distill</generator>
@@ -11,32 +11,32 @@
     <item>
       <title>Skill Merge Attempt: A Pure Theoretical Attempt on ggplot Skill with Hourglass Frame</title>
       <dc:creator>liketocood345</dc:creator>
-      <link>https://liketocood345.github.io/for_hdat9800/posts/2026-06-08-ggplot-hourglass-four-skill-fusion</link>
+      <link>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-08-ggplot-hourglass-four-skill-fusion</link>
       <description>blog1-One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.</description>
-      <guid>https://liketocood345.github.io/for_hdat9800/posts/2026-06-08-ggplot-hourglass-four-skill-fusion</guid>
+      <guid>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-08-ggplot-hourglass-four-skill-fusion</guid>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Guiding One Skill Merge Is the Fastest Way to Learn</title>
       <dc:creator>liketocood345</dc:creator>
-      <link>https://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn</link>
+      <link>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-06-skill-merge-fastest-way-to-learn</link>
       <description>blog0-One merge is both study and the creation of a reusable AI asset—two birds, one stone.</description>
-      <guid>https://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn</guid>
+      <guid>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-06-skill-merge-fastest-way-to-learn</guid>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>测试</title>
       <dc:creator>&lt;=test_place_holder=&gt;</dc:creator>
-      <link>https://liketocood345.github.io/for_hdat9800/posts/2026-06-05-test</link>
+      <link>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-05-test</link>
       <description>&lt;=test_place_holder=&gt;</description>
-      <guid>https://liketocood345.github.io/for_hdat9800/posts/2026-06-05-test</guid>
+      <guid>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-05-test</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>测试2视频外链</title>
-      <link>https://liketocood345.github.io/for_hdat9800/posts/2026-06-05-test2-video-link</link>
+      <link>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-05-test2-video-link</link>
       <description>Bilibili embed test (test_video_link).</description>
-      <guid>https://liketocood345.github.io/for_hdat9800/posts/2026-06-05-test2-video-link</guid>
+      <guid>https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-05-test2-video-link</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>

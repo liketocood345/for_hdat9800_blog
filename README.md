@@ -1,8 +1,13 @@
-# for_hdat9800 — HDAT9800 健康数据科学博客
+# for_hdat9800_blog — HDAT9800 健康数据科学博客
 
 UNSW HDAT9800（Term 2 2026）课程博客。技术栈：**R Markdown + Distill + GitHub Pages**。
 
-- **线上地址**：https://liketocood345.github.io/for_hdat9800/
+| 项 | 路径 |
+|---|---|
+| **GitHub 仓库** | [liketocood345/for_hdat9800_blog](https://github.com/liketocood345/for_hdat9800_blog) |
+| **GitHub Pages** | https://liketocood345.github.io/for_hdat9800_blog/ |
+| **本地工作目录** | `e:\HDAT9800\for_hdat9800\`（文件夹名未改，与远程仓库 slug 可不同） |
+
 - **默认首页**：总览（`index.html`），进入站点即显示全部博文列表
 
 ---
@@ -139,7 +144,7 @@ for_hdat9800/
 | `media-container media-container--medium` | 640px | 正文内嵌视频 |
 | `media-container media-container--small` | 400px | 缩略剪辑、小图 |
 
-可复制 `_templates/media-container-snippets.Rmd` 中的 `{=html}` 片段。样式在 `theme.css`（全站通过 `favicon.html` 外链 `/for_hdat9800/theme.css`，避免博文页内联样式过期）；裸 `iframe` / `video` 会显示虚线边框提示。
+可复制 `_templates/media-container-snippets.Rmd` 中的 `{=html}` 片段。样式在 `theme.css`（全站通过 `favicon.html` 外链 `/for_hdat9800_blog/theme.css`，避免博文页内联样式过期）；裸 `iframe` / `video` 会显示虚线边框提示。
 
 ### 媒体与 Git LFS（默认不用）
 
@@ -176,11 +181,18 @@ for_hdat9800/
 
 ## 改动记录
 
+### 2026-06-09 — GitHub 仓库重命名
+
+- 远程仓库由 `for_hdat9800` 更名为 [`for_hdat9800_blog`](https://github.com/liketocood345/for_hdat9800_blog)
+- Pages 根路径同步为 `https://liketocood345.github.io/for_hdat9800_blog/`
+- 更新 `_site.yml` `base_url`、`favicon.html` 绝对路径、博文内外链、`origin` remote
+- **本地目录**仍为 `e:\HDAT9800\for_hdat9800\`（仅远程 slug 变更）
+
 ### 2026-06-05 — 初始化
 
 - 用 `distill::create_blog(gh_pages = TRUE)` 创建博客骨架
 - 配置 `base_url`、`.nojekyll`、`output_dir: docs`
-- 首次 push 至 https://github.com/liketocood345/for_hdat9800
+- 首次 push 至 https://github.com/liketocood345/for_hdat9800_blog
 
 ### 2026-06-05 — 第一篇博文「测试」
 

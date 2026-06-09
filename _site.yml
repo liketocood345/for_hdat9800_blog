@@ -1,8 +1,8 @@
-name: "for_hdat9800"
+name: "for_hdat9800_blog"
 title: "HDAT9800 Blog"
 description: |
   Health data science blog — visualisation, communication, and reproducible analysis.
-base_url: https://liketocood345.github.io/for_hdat9800
+base_url: https://liketocood345.github.io/for_hdat9800_blog
 output_dir: "docs"
 navbar:
   right:

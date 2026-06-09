@@ -60,7 +60,7 @@ function Repair-QmdDistillHtml {
         [string]$SiteRoot
     )
 
-    $baseUrl = "https://liketocood345.github.io/for_hdat9800"
+    $baseUrl = "https://liketocood345.github.io/for_hdat9800_blog"
     $canonical = "$baseUrl/posts/$PostFolder/"
     $html = Get-Content $HtmlPath -Raw -Encoding UTF8
 

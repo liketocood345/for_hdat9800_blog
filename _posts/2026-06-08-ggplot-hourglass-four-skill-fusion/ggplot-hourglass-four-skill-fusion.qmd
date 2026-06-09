@@ -18,9 +18,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 *One funnel for EDA, manuscript figures, review, and gallery—four repos, one waist record.*
 
-[Blog0](https://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn/) ends with a question: how do you actually carry out one skill merge? Perhaps the answer only shows up **in practice**. This post is one practice run—a **theory-first funnel** that folds four public plotting skills into a single **ggplot hourglass**, not a generic essay about skills.
+[Blog0](https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-06-skill-merge-fastest-way-to-learn/) ends with a question: how do you actually carry out one skill merge? Perhaps the answer only shows up **in practice**. This post is one practice run—a **theory-first funnel** that folds four public plotting skills into a single **ggplot hourglass**, not a generic essay about skills.
 
-**Takeaways:** a fused domain skill ([`ggplot-hourglass`](https://github.com/liketocood345/for_hdat9800/blob/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/ggplot-hourglass/SKILL.md)) and an [`hourglass-skill-merge-skill`](https://github.com/liketocood345/for_hdat9800/blob/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/hourglass-skill-merge-skill/SKILL.md). You get a maintainer-facing map of triggers, BIND decisions, and leaf pointers, plus an honest read on **Merged vs Linked** and when the architecture is worth the cost.
+**Takeaways:** a fused domain skill ([`ggplot-hourglass`](https://github.com/liketocood345/for_hdat9800_blog/blob/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/ggplot-hourglass/SKILL.md)) and an [`hourglass-skill-merge-skill`](https://github.com/liketocood345/for_hdat9800_blog/blob/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/hourglass-skill-merge-skill/SKILL.md). You get a maintainer-facing map of triggers, BIND decisions, and leaf pointers, plus an honest read on **Merged vs Linked** and when the architecture is worth the cost.
 
 ## Introduction
 
@@ -175,8 +175,8 @@ Full entry aliases live in `hourglass-waist-registry.yaml` and `references/inver
 
 | Artifact | Role |
 |----------|------|
-| [`takeaway/ggplot-hourglass/`](https://github.com/liketocood345/for_hdat9800/tree/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/ggplot-hourglass) | Thin fused entry—one funnel, not four parallel loads |
-| [`takeaway/hourglass-skill-merge-skill/`](https://github.com/liketocood345/for_hdat9800/tree/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/hourglass-skill-merge-skill) | Meta skill—hourglass merge for any conflicting set |
+| [`takeaway/ggplot-hourglass/`](https://github.com/liketocood345/for_hdat9800_blog/tree/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/ggplot-hourglass) | Thin fused entry—one funnel, not four parallel loads |
+| [`takeaway/hourglass-skill-merge-skill/`](https://github.com/liketocood345/for_hdat9800_blog/tree/main/_posts/2026-06-08-ggplot-hourglass-four-skill-fusion/takeaway/hourglass-skill-merge-skill) | Meta skill—hourglass merge for any conflicting set |
 | `hourglass-waist-registry.yaml` | Machine-readable entries, Γ, mutex, leaves |
 | `hourglass-skill-architecture.md` | Theory: multi-hourglass, belt, anti-patterns |
 | `hourglass-unified-funnel.md` | Schema-level funnel diagram |
@@ -278,7 +278,7 @@ Narrow waist, utterance convergence, and lazy expansion are **familiar**—Inter
 
 | Resource | URL |
 |----------|-----|
-| Blog0 | https://liketocood345.github.io/for_hdat9800/posts/2026-06-06-skill-merge-fastest-way-to-learn/ |
+| Blog0 | https://liketocood345.github.io/for_hdat9800_blog/posts/2026-06-06-skill-merge-fastest-way-to-learn/ |
 | ggplot-skills | https://github.com/Broccolito/ggplot-skills |
 | scientific-plotting-skill | https://github.com/dazhiyang/scientific-plotting-skill |
 | awesome-rosetta-skills | https://github.com/xjtulyc/awesome-rosetta-skills |
